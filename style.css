@@ -341,7 +341,7 @@ html {
 
 .nav-menu > li {
   position: relative;
-  margin: 0 00px;
+  margin: 0 15px;
 }
 
 .nav-menu a {
@@ -386,7 +386,7 @@ html {
 
 /* Body padding so content not hidden by fixed nav */
 body {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 main {

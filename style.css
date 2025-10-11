@@ -313,7 +313,7 @@ html {
 .navbar {
   border-top: 3px solid #b71c1c;
   position: fixed;
-  width: 100%;
+  width: 40%;
   top: 0;
   left: 0;
   font-family: Arial, sans-serif;

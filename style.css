@@ -360,7 +360,7 @@ html {
 }
 
 .nav-menu > li:hover > a {
-  color: #b71c1c;
+  color: black;
 }
 
 .dropdown-content {
@@ -386,7 +386,7 @@ html {
 
 /* Body padding so content not hidden by fixed nav */
 body {
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 main {

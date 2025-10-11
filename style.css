@@ -312,8 +312,21 @@ html {
 /* Navigation bar styles */
 .navbar {
   border-top: 3px solid #b71c1c;
-  background: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
   font-family: Arial, sans-serif;
+  z-index: 1000;
+  box-sizing: border-box;
+  background-image: url('image.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  /* Faded overlay */
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
 }
 
 .nav-menu {
@@ -322,6 +335,8 @@ html {
   list-style: none;
   margin: 0;
   padding: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .nav-menu > li {
@@ -332,10 +347,12 @@ html {
 .nav-menu a {
   text-decoration: none;
   color: #222;
-  padding: 16px 8px;
+  padding: 16px 12px;
   display: block;
   font-size: 16px;
   transition: color 0.3s;
+  position: relative;
+  z-index: 1;
 }
 
 .nav-menu .active {
@@ -353,7 +370,7 @@ html {
   background: #fff;
   min-width: 160px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  z-index: 1;
+  z-index: 1001;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -367,7 +384,11 @@ html {
   display: block;
 }
 
-/* Main page styles */
+/* Body padding so content not hidden by fixed nav */
+body {
+  padding-top: 60px;
+}
+
 main {
   padding: 20px;
   font-family: Arial, sans-serif;
@@ -381,6 +402,7 @@ main p {
   font-size: 18px;
   color: #333;
 }
+
 
 
 body {
